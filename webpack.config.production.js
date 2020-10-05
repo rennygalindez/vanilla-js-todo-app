@@ -48,14 +48,14 @@ module.exports = {
       filename: '[name].[contentHash].css',
       chunkFilename: '[id].css',
     }),
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: 'src/assets/images',
-          to: 'assets',
-        },
-      ],
-    }),
+    // new CopyWebpackPlugin({
+    //   patterns: [
+    //     {
+    //       from: 'src/assets/images',
+    //       to: 'assets',
+    //     },
+    //   ],
+    // }),
     new CleanWebpackPlugin(),
   ],
 };
